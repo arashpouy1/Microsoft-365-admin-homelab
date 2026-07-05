@@ -107,7 +107,7 @@ The Sign-in Logs were used to investigate authentication activity for the user. 
 
 These logs are primarily used to investigate authentication and access-related events.
 
-![Sign-in Logs](screenshots/sign-in-logs.png)
+![Sign-in Logs](screenshots/03-sign-in-logs.png)
 
 ---
 
