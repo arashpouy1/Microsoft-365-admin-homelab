@@ -82,13 +82,11 @@ The audit logs showed the actor, target, activity and modified properties.
 ## Screenshots
 ## User Account Administration
 
-A new cloud-only user was created using the Microsoft Entra admin center.
-
 ![Create User](screenshots/01-create-user.png)
 
-![Disabled User](screenshots/02-user-disabled.jpg)
+![Disabled User](screenshots/02-disable-user.jpg)
 
-![Sign-in Logs](screenshots/04-sign-in-logs.png)
+![Sign-in Logs](screenshots/03-sign-in-logs.png)
 
 ![Audit Logs](screenshots/05-audit-logs.jpg)
 
