@@ -80,14 +80,44 @@ The audit logs showed the actor, target, activity and modified properties.
 - Audit Logs
 
 ## Screenshots
-## User Account Administration
+
+## 1. User Account Administration
+
+This lab began by creating a new cloud-only user account named **Emily Nguyen**. During the creation process, a temporary password was assigned and the user was configured to change the password at the first sign-in.
 
 ![Create User](screenshots/01-create-user.png)
 
-![Disabled User](screenshots/02-disable-user.jpg)
+The account password was then reset by the administrator, and all active user sessions were revoked to force re-authentication and ensure the new credentials were used immediately.
 
-![Sign-in Logs](screenshots/03-sign-in-logs.png)
+![Reset Password and Revoke Sessions](screenshots/02-disable-user.jpg)
 
-![Audit Logs](screenshots/05-audit-logs.jpg)
+---
 
+## 2. User Unable to Sign In After Account Disable
+
+The user account was disabled from the Microsoft Entra admin center. When Emily attempted to sign in again, Microsoft correctly prevented access and displayed an account locked message.
+
+This demonstrates that disabling a user immediately blocks new authentication attempts without deleting the account.
+
+![Disabled User](screenshots/User locked after disabling.jpg)
+
+---
+
+## 3. Investigating Sign-in Logs
+
+The Sign-in Logs were used to investigate authentication activity for the user. The logs showed successful and failed sign-ins, authentication requirements, IP address, client application, browser information and timestamps.
+
+These logs are primarily used to investigate authentication and access-related events.
+
+![Sign-in Logs](screenshots/Sign-In%20Logs.jpg)
+
+---
+
+## 4. Investigating Audit Logs
+
+Audit Logs were reviewed to track administrative actions performed on the user account. They recorded operations such as updating the account, disabling the account, deleting the user and restoring the deleted account.
+
+Unlike Sign-in Logs, Audit Logs record **who performed an administrative action, when it occurred, and what object was modified**.
+
+![Audit Logs](screenshots/Audit%20Logs.jpg)
 
