@@ -80,5 +80,11 @@ The audit logs showed the actor, target, activity and modified properties.
 - Audit Logs
 
 ## Screenshots
+## Creating a Cloud User
+
+A new cloud-only user was created using the Microsoft Entra admin center.
+
+![Create User](screenshots/01-create-user.png)
 
 Screenshots will be added to demonstrate the key steps performed in this project.
+
