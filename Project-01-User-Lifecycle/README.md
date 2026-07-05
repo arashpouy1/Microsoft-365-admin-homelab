@@ -88,7 +88,7 @@ A new cloud-only user was created using the Microsoft Entra admin center.
 
 ![Disabled User](screenshots/02-user-disabled.jpg)
 
-![Sign-in Logs](screenshots/04-sign-in-logs.jpg)
+![Sign-in Logs](screenshots/04-sign-in-logs.png)
 
 ![Audit Logs](screenshots/05-audit-logs.jpg)
 
