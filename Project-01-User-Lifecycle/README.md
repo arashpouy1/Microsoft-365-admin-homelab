@@ -119,3 +119,11 @@ Unlike Sign-in Logs, Audit Logs record **who performed an administrative action,
 
 ![Audit Logs](screenshots/05-audit-logs.jpg)
 
+## Lessons Learned
+
+- User lifecycle extends beyond simply creating an account.
+- Disabling an account immediately blocks new sign-ins.
+- Revoking sessions forces reauthentication.
+- Sign-in Logs record authentication events.
+- Audit Logs record administrative actions.
+- Soft-deleted users can be restored with their identities and settings.
