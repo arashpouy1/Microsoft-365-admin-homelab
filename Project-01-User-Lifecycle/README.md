@@ -81,7 +81,7 @@ The audit logs showed the actor, target, activity and modified properties.
 
 ## Screenshots
 
-## 1. User Account Administration
+## 1. Creating and Managing a Cloud User
 
 This lab began by creating a new cloud-only user account named **Emily Nguyen**. During the creation process, a temporary password was assigned and the user was configured to change the password at the first sign-in.
 
