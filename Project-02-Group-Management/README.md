@@ -76,8 +76,6 @@ Naming convention:
 - `M365-` for Microsoft 365 collaboration groups
 - `SG_` for security groups
 
----
-
 ## Microsoft 365 Groups
 
 Microsoft 365 groups are primarily designed to support collaboration. Depending on configuration, they can provide shared email, calendar, SharePoint, Planner and Teams-related resources.
@@ -91,6 +89,17 @@ In this project, Microsoft 365 groups were used for departmental collaboration.
 Security groups are primarily used to manage access to resources, applications and services.
 
 Rather than assigning permissions separately to individual users, permissions can be assigned to a security group and inherited by its members.
+### Group Configuration Evidence
+
+The following screenshots show the configuration of Microsoft 365 and security groups within the Bright Horizons Health tenant.
+
+![Microsoft 365 group creation](images/01-microsoft-365-group-creation.jpg)
+
+*Figure 1 — Configuration of a Microsoft 365 group for departmental collaboration.*
+
+![Security group creation](images/02-security-group-creation.jpg)
+
+*Figure 2 — Configuration of a security group for access-oriented administration.*
 
 ---
 
@@ -123,6 +132,9 @@ IT Service Desk rule:
 ```text
 (user.department -eq "IT")
 ```
+![Department-based dynamic membership rule](images/04-department-dynamic-membership-rule.jpg)
+
+*Figure 3 — Dynamic membership rule using the Department attribute to automate group membership.*
 
 ---
 
@@ -135,6 +147,9 @@ The `SG_Managers` group was designed to include users whose department was Manag
 ```
 
 This avoided listing every possible manager title individually.
+![Manager dynamic membership rule](images/05-manager-dynamic-membership-rule.jpg)
+
+*Figure 4 — Dynamic rule using Department and Job Title attributes to identify management employees.*
 
 ---
 
@@ -148,6 +163,9 @@ Validation confirmed whether a user was expected to be:
 - **Not in group**
 
 This was useful before relying on the rule for actual membership processing.
+![Dynamic membership rule validation](images/06-dynamic-rule-validation.jpg)
+
+*Figure 5 — Validation of selected users against a dynamic membership rule before relying on membership processing.*
 
 ---
 
@@ -156,6 +174,9 @@ This was useful before relying on the rule for actual membership processing.
 ### Membership Verification
 
 The configured groups were reviewed to confirm that expected users were present and obvious incorrect members were absent.
+![Clinical group membership verification](images/07-clinical-membership-verification.jpg)
+
+*Figure 6 — Verification that expected Clinical employees were automatically included in the dynamic group.*
 
 ### Live Department Change Test
 
@@ -177,6 +198,18 @@ After processing, the user was:
 - Added to `M365-HR`
 
 This demonstrated an internal mover scenario.
+![User before department change](images/09-user-before-department-change.jpg)
+
+*Figure 7 — User account before the internal-mover test, with Department set to Clinical.*
+
+![User after department change](images/10-user-after-department-change.jpg)
+
+
+*Figure 8 — The same user after the Department attribute was changed from Clinical to HR.*
+
+![Automatic HR membership after department change](images/11-automatic-hr-membership-after-change.jpg)
+
+*Figure 9 — Automatic membership of the HR group following the Department attribute change.*
 
 ### New User Provisioning Test
 
@@ -194,6 +227,17 @@ She was automatically added to:
 - `SG_Managers`
 
 This demonstrated that one identity record could satisfy multiple dynamic rules.
+![New Procurement Manager user](images/12-new-procurement-manager-user.jpg)
+
+*Figure 10 — Sophia Taylor created with Department set to Procurement and Job Title set to Procurement Manager.*
+
+![Automatic Procurement group membership](images/13-automatic-procurement-membership.jpg)
+
+*Figure 11 — Automatic assignment to the Procurement Microsoft 365 group based on the Department attribute.*
+
+![Automatic Managers group membership](images/14-automatic-manager-membership.jpg)
+
+*Figure 12 — Automatic assignment to the Managers security group based on the Job Title rule.*
 
 ---
 
@@ -216,9 +260,18 @@ For the assigned `M365-Finance` group, Emily could:
 - Promote members to owners
 - Review membership
 - Edit group information
+![Group owner assignment](images/15-group-owner-assignment.jpg)
+
+*Figure 13 — Emily Nguyen assigned as an owner of the Microsoft 365 group in the Entra admin centre.*
+
+![Assigned group owner controls](images/16-assigned-group-owner-controls.jpg)
+
+*Figure 14 — Delegated membership controls available to Emily as an owner of the assigned M365-Finance group.*
 
 For the dynamic `M365-Reception` group, membership remained controlled by the dynamic rule and user attributes.
+![Dynamic group owner view](images/17-dynamic-group-owner-view.jpg)
 
+*Figure 15 — Owner view of the dynamic M365-Reception group, where membership remains controlled by the dynamic rule.*
 The owner portal also displayed options for reviewing group requests and expiring groups. These features were observed, but the complete request workflow was not tested.
 
 ---
@@ -284,26 +337,6 @@ The owner portal showed group-request functionality, but a complete requester-si
 Dynamic group management depends heavily on accurate and consistently maintained identity information.
 
 The project showed how user attributes can automate collaboration and access decisions, how attribute changes can automatically alter membership, and how ownership can delegate group administration without granting broad tenant-wide permissions.
-
----
-
-## Screenshots
-
-The following evidence will be added:
-
-1. Microsoft 365 group configuration
-2. Security group configuration
-3. Dynamic department rule
-4. Manager dynamic rule
-5. Rule validation
-6. Verified membership
-7. Live department-change test
-8. New-user creation
-9. Automatic Procurement membership
-10. Automatic Managers membership
-11. Group owner configuration
-12. Assigned-group owner controls
-13. Dynamic-group owner view
 
 ---
 
