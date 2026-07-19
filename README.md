@@ -45,7 +45,7 @@ The projects build progressively on the same Microsoft 365 tenant. Identities, a
 
 This portfolio is designed as a connected administration environment rather than a collection of unrelated exercises.
 
-**Users and organisational attributes → Groups and dynamic membership → Administrative roles and RBAC → Authentication and Security Defaults → Conditional Access → Enterprise Applications and App Registrations**
+**Users and identity lifecycle → Groups and dynamic membership → Administrative roles and RBAC → Authentication and Security Defaults → Conditional Access → Enterprise Applications and App Registrations**
 
 Each project extends the existing environment and introduces additional Microsoft 365 and Microsoft Entra administration capabilities.
 
