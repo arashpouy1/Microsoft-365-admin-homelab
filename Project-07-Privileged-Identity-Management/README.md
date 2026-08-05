@@ -313,3 +313,135 @@ The fields were now read-only, confirming that the temporary administrator permi
 </p>
 
 This demonstrates Microsoft's **Just-In-Time (JIT)** administration model, where privileged permissions exist only for the minimum period required to complete an administrative task.
+
+---
+
+# Audit and Validation
+
+After completing the implementation, Microsoft Entra audit logs were reviewed to validate that each stage of the privileged access lifecycle had been recorded successfully.
+
+The audit history confirmed:
+
+- Eligible role assignment
+- Activation request submission
+- Approval of the activation request
+- Successful role activation
+- Automatic role expiration
+- Removal of privileged permissions
+
+These audit records provide accountability by recording who requested privileged access, who approved it, when it was activated and when it expired.
+
+Such auditing is essential for security investigations, compliance reporting and demonstrating adherence to organisational security policies.
+
+---
+
+# Key Concepts Learned
+
+During this project I gained practical experience with the following Microsoft Entra PIM concepts:
+
+- Privileged Identity Management (PIM)
+- Just-In-Time (JIT) Administration
+- Permanent vs Eligible role assignments
+- Privileged role activation
+- Multi-Factor Authentication (MFA) during activation
+- Business justification requirements
+- Approval workflows
+- Temporary privileged access
+- Automatic role expiration
+- Privileged access auditing
+- Separation of Duties
+- Principle of Least Privilege
+
+---
+
+# Production Considerations
+
+Microsoft Entra Privileged Identity Management is designed to minimise standing administrator privileges and reduce the risk associated with compromised privileged accounts.
+
+Typical production scenarios include:
+
+### Global Administrator
+
+Global Administrator is one of the most privileged roles within Microsoft Entra and should rarely be assigned permanently.
+
+Instead, administrators should receive an eligible assignment and activate the role only when tenant-wide administrative changes are required.
+
+---
+
+### User Administrator
+
+Service Desk and Identity teams frequently require User Administrator permissions for tasks such as:
+
+- Creating users
+- Resetting passwords
+- Updating user information
+- Managing employee lifecycle events
+
+Rather than granting permanent access, organisations often configure these staff as eligible administrators who activate the role only when required.
+
+---
+
+### Security Administrator
+
+Security teams may activate Security Administrator permissions when investigating incidents, reviewing Microsoft Defender alerts or implementing security policy changes.
+
+Keeping this role permanently active increases organisational risk.
+
+---
+
+### Helpdesk Administrator
+
+Helpdesk personnel commonly require elevated permissions to assist users with password resets and account recovery.
+
+Microsoft Entra PIM allows these permissions to be activated only while providing support, reducing unnecessary privileged access.
+
+---
+
+### Emergency Administration
+
+Some organisations maintain emergency ("break-glass") administrator accounts for disaster recovery scenarios.
+
+These accounts are typically excluded from PIM activation requirements but are tightly monitored and protected using additional security controls.
+
+---
+
+# Lessons Learned
+
+This project demonstrated that Microsoft Entra Privileged Identity Management is much more than a mechanism for assigning administrator roles.
+
+PIM provides a comprehensive framework for controlling privileged access through Just-In-Time administration, approval workflows, temporary role activation and auditing.
+
+Implementing eligible assignments instead of permanent administrator roles significantly reduces standing privileged access while maintaining operational flexibility for IT administrators.
+
+The practical implementation reinforced the importance of:
+
+- Zero Trust security principles
+- Principle of Least Privilege
+- Separation of Duties
+- Strong authentication using Multi-Factor Authentication
+- Comprehensive auditing of privileged activities
+
+---
+
+# Conclusion
+
+This project successfully demonstrated the complete lifecycle of privileged administration using Microsoft Entra Privileged Identity Management.
+
+An eligible User Administrator role was assigned, configured with Multi-Factor Authentication, business justification and approval requirements, activated through a Just-In-Time workflow, used to perform administrative tasks, automatically expired and fully audited.
+
+The implementation reflects how many enterprise organisations manage privileged access within Microsoft Entra and provides a strong foundation for the next project covering Microsoft Entra Identity Governance.
+
+---
+
+# Next Project
+
+➡️ **Project 08 – Microsoft Entra Identity Governance**
+
+The next project expands on privileged access management by exploring broader identity governance capabilities including:
+
+- Access Reviews
+- Entitlement Management
+- Access Packages
+- Guest Access Governance
+- Joiner, Mover and Leaver processes
+- Role-Assignable Groups and Privileged Identity Management for Groups
