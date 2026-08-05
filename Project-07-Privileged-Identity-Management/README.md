@@ -201,7 +201,7 @@ The activation settings determine the security controls that users must satisfy 
 Initially, the default configuration was reviewed.
 
 <p align="center">
-<img src="Screenshots/03-PIM-Role-Settings-Approval.jpg" width="900">
+<img src="Screenshots/03-PIM-Role-Settings-Approval-MFA.jpg" width="900">
 </p>
 
 The activation policy was then modified to strengthen privileged access by enabling approval before activation.
