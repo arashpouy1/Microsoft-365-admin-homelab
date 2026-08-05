@@ -211,7 +211,7 @@ The following controls were configured:
 - Require Multi-Factor Authentication (MFA)
 - Require business justification
 - Require approval before activation
-- Grace Walker configured as the approver
+- Arash Pouya configured as the approver
 - Maximum activation duration of 8 hours
 
 <p align="center">
