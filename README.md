@@ -34,13 +34,14 @@ The projects build progressively on the same Microsoft 365 tenant. Identities, a
 |---|---|---|
 | [Project 01 — User Lifecycle Management](Project-01-User-Lifecycle/README.md) | User creation, identity attributes, MFA, session management, deletion, restoration and auditing | ✅ Complete |
 | [Project 02 — Group Management](Project-02-Group-Management/README.md) | Microsoft 365 groups, security groups, assigned and dynamic membership, rule validation and group ownership | ✅ Complete |
-| [Project 03 – Administrative Roles & RBAC](Project-03-Administrative-Roles-RBAC/README.md) | Administrative roles, least privilege, role assignment and delegated administration | ✅ Complete |
+| [Project 03 — Administrative Roles & RBAC](Project-03-Administrative-Roles-RBAC/README.md) | Administrative roles, least privilege, role assignment and delegated administration | ✅ Complete |
 | Project 04 — Authentication & Security Defaults | Authentication methods, MFA configuration and tenant-wide Security Defaults | Planned |
 | Project 05 — Conditional Access | Access policies, MFA controls, exclusions, testing and safe policy deployment | Planned |
 | Project 06 — Enterprise Applications & App Registrations | Enterprise applications, application registrations, permissions and service principals | Planned |
+| [Project 07 — Privileged Identity Management (PIM)](Project-07-Privileged-Identity-Management/README.md) | Eligible role assignments, Just-In-Time activation, approval workflows, activation policies and auditing | ✅ Complete |
+| [Project 08 — Identity Governance](Project-08-Identity-Governance/README.md) | Access Reviews, Entitlement Management, Access Packages, guest access and lifecycle governance | 🚧 In Progress |
 
 ---
-
 ## Progressive Lab Approach
 
 This portfolio is designed as a connected administration environment rather than a collection of unrelated exercises.
