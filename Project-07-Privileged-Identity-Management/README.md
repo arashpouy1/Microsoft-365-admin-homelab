@@ -159,7 +159,7 @@ For these reasons, PIM has become a common security control within enterprise Mi
 The following diagram summarises the complete Just-In-Time privileged access lifecycle implemented in this project.
 
 <p align="center">
-<img src="Screenshots/Project-07-Diagram-01-PIM-Activation-Workflow.png" width="1000" alt="Microsoft Entra PIM Just-In-Time role activation workflow">
+<img src="Screenshots/Project-07-Diagram-01-PIM-Activation-Workflow.png" width="800" alt="Microsoft Entra PIM Just-In-Time role activation workflow">
 </p>
 
 The workflow begins with an eligible user requesting activation. Microsoft Entra then enforces the configured security controls, including MFA, business justification and approval. Once approved, the privileged role becomes active temporarily, allowing the required administrative task to be completed before the role expires automatically.
@@ -191,7 +191,7 @@ The Quick Start page was reviewed to become familiar with the available PIM mana
 The following diagram compares the security implications of permanent administrator assignments with eligible assignments managed through Microsoft Entra PIM.
 
 <p align="center">
-<img src="Screenshots/Project-07-Diagram-02-Permanent-vs-Eligible.png" width="1000" alt="Comparison of permanent and eligible administrator assignments using Microsoft Entra PIM">
+<img src="Screenshots/Project-07-Diagram-02-Permanent-vs-Eligible.png" width="700" alt="Comparison of permanent and eligible administrator assignments using Microsoft Entra PIM">
 </p>
 
 Permanent assignments provide continuous privileged access, increasing the potential attack surface if an administrator account is compromised.
@@ -232,7 +232,7 @@ The activation settings determine the security controls that users must satisfy 
 Initially, the default configuration was reviewed.
 
 <p align="center">
-<img src="Screenshots/03-PIM-Role-Settings-Approval-MFA.jpg" width="900">
+<img src="Screenshots/03-PIM-Role-Settings-Approval-MFA.jpg" width="700">
 </p>
 
 The activation policy was then modified to strengthen privileged access by enabling approval before activation.
@@ -246,7 +246,7 @@ The following controls were configured:
 - Maximum activation duration of 8 hours
 
 <p align="center">
-<img src="Screenshots/04-Configure-Approval-Workflow.jpg" width="900">
+<img src="Screenshots/04-Configure-Approval-Workflow.jpg" width="550">
 </p>
 
 These settings ensure that privileged access cannot be activated without both strong authentication and administrative oversight.
@@ -266,7 +266,7 @@ Because approval was required, Microsoft Entra prompted for a business justifica
 A business justification was entered explaining that elevated permissions were required to update job information for a newly created employee.
 
 <p align="center">
-<img src="Screenshots/06-Activation-Justification.jpg" width="900">
+<img src="Screenshots/06-Activation-Justification.jpg" width="500">
 </p>
 
 The activation request was then submitted for approval.
@@ -291,7 +291,7 @@ The pending request included:
 After reviewing the request, the activation was approved.
 
 <p align="center">
-<img src="Screenshots/08-Approve-Activation-Request.jpg" width="900">
+<img src="Screenshots/08-Approve-Activation-Request.jpg" width="400">
 </p>
 
 This demonstrates an important security principle known as **separation of duties**, ensuring administrators cannot grant themselves privileged access without approval.
