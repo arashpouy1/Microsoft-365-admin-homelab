@@ -154,6 +154,22 @@ For these reasons, PIM has become a common security control within enterprise Mi
 
 ---
 
+## PIM Activation Workflow
+
+The following diagram summarises the complete Just-In-Time privileged access lifecycle implemented in this project.
+
+<p align="center">
+<img src="Screenshots/Project-07-Diagram-01-PIM-Activation-Workflow.png" width="1000" alt="Microsoft Entra PIM Just-In-Time role activation workflow">
+</p>
+
+The workflow begins with an eligible user requesting activation. Microsoft Entra then enforces the configured security controls, including MFA, business justification and approval. Once approved, the privileged role becomes active temporarily, allowing the required administrative task to be completed before the role expires automatically.
+
+Audit logging operates throughout the lifecycle, recording the request, approval, activation and automatic expiration.
+
+---
+
+---
+
 # Module 1 – Configuring Microsoft Entra PIM
 
 The first stage of the project involved configuring Microsoft Entra Privileged Identity Management (PIM) within the Bright Horizons Health tenant.
