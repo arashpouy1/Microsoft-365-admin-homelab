@@ -57,8 +57,8 @@ The projects build progressively on the same Microsoft 365 tenant. Identities, a
 | Project 04 — Authentication & Security Defaults | Authentication methods, MFA configuration and tenant-wide Security Defaults | Planned |
 | Project 05 — Conditional Access | Access policies, MFA controls, exclusions, testing and safe policy deployment | Planned |
 | Project 06 — Enterprise Applications & App Registrations | Enterprise applications, application registrations, permissions and service principals | Planned |
-| [Project 07 — Privileged Identity Management (PIM)](Project-07-Privileged-Identity-Management/README.md) | Eligible administrator assignments, Just-In-Time (JIT) activation, approval workflows, activation policies and audit logging | ✅ Complete |
-| [Project 08 — Identity Governance](Project-08-Identity-Governance/README.md) | Access Reviews, Entitlement Management, Access Packages, guest access and lifecycle governance | 🚧 In Progress |
+| [Project 07 — Microsoft Entra Privileged Identity Management (PIM)](Project-07-Privileged-Identity-Management/README.md) | Eligible administrator assignments, Just-In-Time (JIT) activation, approval workflows, activation policies and audit logging | ✅ Complete |
+| [Project 08 — Microsoft Entra Identity Governance](Project-08-Identity-Governance/README.md) | Access Reviews, Entitlement Management, Access Packages, guest access and lifecycle governance | 🚧 In Progress |
 
 ---
 
