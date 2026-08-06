@@ -186,11 +186,26 @@ The Quick Start page was reviewed to become familiar with the available PIM mana
 
 # Module 2 – Creating an Eligible Role Assignment
 
-Rather than assigning permanent administrator permissions, **Alivia Phan** was assigned the **User Administrator** role as an **Eligible Assignment**.
+### Permanent vs Eligible Administrator Assignments
+
+The following diagram compares the security implications of permanent administrator assignments with eligible assignments managed through Microsoft Entra PIM.
+
+<p align="center">
+<img src="Screenshots/Project-07-Diagram-02-Permanent-vs-Eligible.png" width="1000" alt="Comparison of permanent and eligible administrator assignments using Microsoft Entra PIM">
+</p>
+
+Permanent assignments provide continuous privileged access, increasing the potential attack surface if an administrator account is compromised.
+
+Eligible assignments reduce this risk by requiring the user to complete an activation process before privileged permissions become active. The activated role is time-limited and removed automatically when the activation period expires.
+
+---
+After reviewing the two assignment models, an **Eligible User Administrator** assignment was created for **Alivia Phan** using the **User Administrator** role.
 
 An eligible assignment allows a user to activate privileged permissions only when administrative work is required.
 
-Unlike permanent assignments, administrator permissions are not continuously available, significantly reducing the attack surface available to malicious actors.
+Unlike permanent administrator assignments, privileged permissions are not continuously available. This reduces the attack surface by ensuring elevated access exists only for the duration of approved administrative tasks.
+
+The following configuration shows Alivia Phan assigned as an **Eligible User Administrator**, allowing Just-In-Time activation through Microsoft Entra PIM.
 
 <p align="center">
 <img src="Screenshots/02-Eligible-Role-Assignment.jpg" width="900">
