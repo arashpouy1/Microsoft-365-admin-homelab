@@ -660,6 +660,13 @@ Together, these exercises demonstrated how Microsoft Entra can support controlle
 
 # Next Steps
 
-The next stages of the Microsoft Entra learning roadmap will continue building the identity administration and security foundation, including authentication controls and **Conditional Access**.
+This project completed the core Microsoft Entra Identity Governance capabilities within the Bright Horizons Health lab.
+
+The next stage of the Entra roadmap focuses on automation and operational administration through Microsoft Graph PowerShell.
+
+**Project 09 – Microsoft Graph PowerShell & Entra Automation** will extend these governance concepts by replacing repetitive portal-based administration with scalable scripting and automation for users, groups, roles and identity management.
+
+**Project 10 – Identity Health & Security Assessment** will then bring together governance, authentication and security controls in a production-style review of the tenant's identity posture.
 
 A future advanced Identity Governance extension can also provide hands-on experience with **Lifecycle Workflows** when appropriate licensing is available.
+
