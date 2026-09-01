@@ -298,7 +298,7 @@ This module extended the concept by using **PIM for Groups** to govern membershi
 A security group named **SG_PIM_UserAdmins** was created with Microsoft Entra role assignment enabled and the **User Administrator** role associated with the group.
 
 <p align="center">
-<img src="Screenshots/17-Role-Assignable-Group-Created.jpg" width="850" alt="Microsoft Entra role-assignable security group">
+<img src="Screenshots/17-Role-Assignable-Group-Created.jpg" width="800" alt="Microsoft Entra role-assignable security group">
 </p>
 
 Role-assignable groups provide a scalable way to manage role assignment through controlled group membership.
@@ -362,7 +362,7 @@ This provided a practical example of combining role-assignable groups with Just-
 Member activation settings were reviewed and modified to strengthen the activation process.
 
 <p align="center">
-<img src="Screenshots/22-PIM-Group-Membership-Settings.jpg" width="800" alt="PIM for Groups member activation settings">
+<img src="Screenshots/22-PIM-Group-Membership-Settings.jpg" width="500" alt="PIM for Groups member activation settings">
 </p>
 
 The configuration demonstrated that **Member** and **Owner** assignments can be governed separately.
