@@ -65,6 +65,23 @@ Conditional Access evaluates **who** is signing in, **what resource** they are a
 
 **Matching a policy's conditions is different from satisfying its grant controls.** An enforced `Block access` policy that matches a sign-in denies access even when another policy's MFA requirement is satisfied.
 
+### Transition from Security Defaults to Conditional Access
+
+Before implementing custom Conditional Access policies, **Security Defaults were disabled** to allow granular policy management within the Bright Horizons Health tenant.
+
+Custom policies were then configured to enforce MFA, block legacy authentication and restrict access under selected conditions.
+
+During the transition, Microsoft-managed Conditional Access policies were also present in the tenant. These were reviewed and switched Off for the lab to avoid overlapping enforcement with the custom policies being tested.
+
+**Key considerations:**
+
+- Security Defaults provide Microsoft's predefined baseline identity protections, while Conditional Access allows more granular control over access requirements.
+- Disabling Security Defaults should be accompanied by a carefully planned replacement security baseline.
+- Microsoft-managed Conditional Access policies should be reviewed before being disabled or replaced.
+- Emergency administrative access must remain protected and recoverable throughout the transition.
+
+**Production consideration:** This was a controlled lab exercise. In a production environment, transitioning from Security Defaults to custom Conditional Access would require a documented policy design, impact assessment, staged deployment and validation to prevent unintended security gaps or administrative lockouts.
+
 ## Policy Inventory
 
 | Policy | Scope | Control | Outcome / lab state |
