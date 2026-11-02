@@ -94,7 +94,7 @@ A security group, **`SG-CA-MFA-Pilot`**, was used to limit the initial rollout t
 `CA001-Require-MFA-Pilot` targeted that group and Office 365 resources, with **Require multifactor authentication** as its grant control.
 
 <p align="center">
-<img src="Screenshots/02-CA001-Pilot-MFA-Policy-Office365-Scope.jpg" width="850" alt="CA001 pilot MFA configuration">
+<img src="Screenshots/02-CA001-Pilot-MFA-Policy-Office365-Scope.jpg" width="600" alt="CA001 pilot MFA configuration">
 </p>
 
 The policy was first evaluated in **Report-only mode**. Sign-in logs were then used to examine whether the policy matched and whether the authentication requirement had been satisfied. Following validation, MFA enforcement was tested on pilot users.
@@ -108,7 +108,7 @@ The policy was first evaluated in **Report-only mode**. Sign-in logs were then u
 `CA002-Require-MFA-All-Users` expanded the MFA baseline to all users and all resources, with an emergency administrator excluded to reduce tenant lockout risk.
 
 <p align="center">
-<img src="Screenshots/04-CA002-AllUsers-MFA-Policy-Scope.jpg" width="850" alt="Organisation-wide MFA policy with emergency access exclusion">
+<img src="Screenshots/04-CA002-AllUsers-MFA-Policy-Scope.jpg" width="600" alt="Organisation-wide MFA policy with emergency access exclusion">
 </p>
 
 The enforced policy was validated through sign-ins, including a non-pilot test user, **Ethan Hall**. For Emily Nguyen, the sign-in log showed **both CA001 and CA002 applied successfully**—an important example of overlapping policies.
@@ -155,7 +155,7 @@ This demonstrated the distinction between a policy **actively denying access** a
 `CA004-Block-Legacy-Authentication` was configured to block legacy authentication client types, including **Exchange ActiveSync clients** and **Other clients**, across resources for the selected user scope.
 
 <p align="center">
-<img src="Screenshots/07-CA004-Legacy-Authentication-Client-Types.jpg" width="850" alt="CA004 conditions targeting legacy authentication clients">
+<img src="Screenshots/07-CA004-Legacy-Authentication-Client-Types.jpg" width="600" alt="CA004 conditions targeting legacy authentication clients">
 </p>
 
 Sign-in activity was reviewed for legacy authentication attempts. **No matching legacy traffic was identified** in this cloud-only lab, so this module validates configuration and monitoring, **not a real blocked legacy-client sign-in**.
