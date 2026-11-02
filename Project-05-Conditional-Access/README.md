@@ -65,22 +65,26 @@ Conditional Access evaluates **who** is signing in, **what resource** they are a
 
 **Matching a policy's conditions is different from satisfying its grant controls.** An enforced `Block access` policy that matches a sign-in denies access even when another policy's MFA requirement is satisfied.
 
+
 ### Transition from Security Defaults to Conditional Access
 
-Before implementing custom Conditional Access policies, **Security Defaults were disabled** to allow granular policy management within the Bright Horizons Health tenant.
+Before implementing custom Conditional Access policies, **Security Defaults were disabled** to allow more granular policy management within the Bright Horizons Health tenant.
 
-Custom policies were then configured to enforce MFA, block legacy authentication and restrict access under selected conditions.
+During this transition, Microsoft Entra displayed a prompt suggesting that Conditional Access policies be enabled. I accepted the suggestion, initially believing it referred to enabling the custom policies that had already been configured in Report-only mode.
 
-During the transition, Microsoft-managed Conditional Access policies were also present in the tenant. These were reviewed and switched Off for the lab to avoid overlapping enforcement with the custom policies being tested.
+However, this action introduced four Microsoft-managed Conditional Access policies:
 
-**Key considerations:**
+- Require multifactor authentication for admins.
+- Require multifactor authentication for Azure management.
+- Require multifactor authentication for all users.
+- Block legacy authentication.
 
-- Security Defaults provide Microsoft's predefined baseline identity protections, while Conditional Access allows more granular control over access requirements.
-- Disabling Security Defaults should be accompanied by a carefully planned replacement security baseline.
-- Microsoft-managed Conditional Access policies should be reviewed before being disabled or replaced.
-- Emergency administrative access must remain protected and recoverable throughout the transition.
+These policies were separate from the custom Conditional Access policies developed for the lab.
 
-**Production consideration:** This was a controlled lab exercise. In a production environment, transitioning from Security Defaults to custom Conditional Access would require a documented policy design, impact assessment, staged deployment and validation to prevent unintended security gaps or administrative lockouts.
+After identifying the additional policies, I reviewed their purpose and disabled them to maintain a controlled testing environment using my own configurations.
+
+**Production consideration:** In a production environment, I would assess the existing security baseline, document the intended replacement policies, evaluate Microsoft-managed policies before modifying them, and use staged deployment and validation to avoid introducing security gaps or administrative lockouts.
+
 
 ## Policy Inventory
 
@@ -240,6 +244,13 @@ The project used **sign-in logs** as the primary means to confirm applicability 
 ---
 
 # Key Concepts and Lessons Learned
+
+
+### Security Defaults and Microsoft-Managed Policies
+
+During the transition from Security Defaults to custom Conditional Access, accepting a Microsoft Entra recommendation introduced four Microsoft-managed Conditional Access policies that were separate from my existing custom policies.
+
+This highlighted the importance of understanding portal recommendations before accepting configuration changes, reviewing overlapping security policies, and maintaining an appropriate security baseline throughout the transition.
 
 ## Policy Exclusions Do Not Block Access
 
