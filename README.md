@@ -55,7 +55,7 @@ The projects build progressively on the same Microsoft 365 tenant. Identities, a
 | [Project 02 — Group Management](Project-02-Group-Management/README.md) | Microsoft 365 groups, Security Groups, assigned and dynamic membership, rule validation and group ownership | ✅ Complete |
 | [Project 03 — Administrative Roles & RBAC](Project-03-Administrative-Roles-RBAC/README.md) | Administrative roles, least privilege, role assignment and delegated administration | ✅ Complete |
 | Project 04 — Authentication & Security Defaults | Authentication methods, MFA configuration and tenant-wide Security Defaults | Planned |
-| Project 05 — Conditional Access | Access policies, MFA controls, exclusions, testing and safe policy deployment |🚧In Progress|
+| [Project 05 – Conditional Access](Project-05-Conditional-Access/README.md) | MFA enforcement, application-based access restrictions, legacy authentication blocking, location-based policies, What If analysis, sign-in log validation and safe policy deployment | ✅ Complete |
 | Project 06 — Enterprise Applications & App Registrations | Enterprise applications, application registrations, permissions and service principals | Planned |
 | [Project 07 — Microsoft Entra Privileged Identity Management (PIM)](Project-07-Privileged-Identity-Management/README.md) | Eligible administrator assignments, Just-In-Time (JIT) activation, approval workflows, activation policies and audit logging | ✅ Complete ||
 | [Project 08 – Microsoft Entra Identity Governance](Project-08-Identity-Governance/README.md) | Entitlement Management, Access Reviews, PIM for Groups and Joiner/Mover/Leaver governance | ✅ Completed |
@@ -124,4 +124,4 @@ The projects document practical configuration, testing, troubleshooting, securit
 
 As additional projects are completed, this portfolio will continue to expand into broader Microsoft Entra Identity Governance, Microsoft Intune and Microsoft 365 administration capabilities.
 
-Last Updated October 2026
+Last Updated November 2026
